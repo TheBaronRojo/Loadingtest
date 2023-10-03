@@ -13,7 +13,7 @@ export default async function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <h1>Home</h1>
 
-      <Link href={"/test"}>ir al 2</Link>
+      <Link prefetch={false} href={"/test"}>ir al 2</Link>
     </main>
   )
 }

@@ -12,7 +12,7 @@ export default async function Dos() {
         <main className="flex min-h-screen flex-col items-center justify-between p-24">
             <h1>pagina de test</h1>
 
-           <Link href={"/"}>ir al 1</Link>
+           <Link prefetch={false} href={"/"}>ir al 1</Link>
         </main>
     )
 }
