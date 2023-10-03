@@ -1,13 +1,17 @@
 import Link from "next/link"
 
+async function getData() {
+    
+  return new Promise((resolve, reject) => {
+      setTimeout(() => {
+          resolve('done')
+      }, 5000)
+  })
+}
 
 export default async function Home() {
 
-  const t = await new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve('done')
-    }, 5000)
-})
+  const t = await getData();
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
